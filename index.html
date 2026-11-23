@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haarmode Linda Smout | Kapsalon in Essen</title>
     <meta name="description" content="Haarmode Linda Smout aan de Stationsstraat 215 in Essen. Persoonlijke haarverzorging voor dames, heren en kinderen. Bel voor een afspraak: 03 667 45 69.">
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-cream: #FAF8F5;
@@ -33,14 +30,14 @@
         }
 
         body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-cream);
             color: var(--text-dark);
             line-height: 1.6;
         }
 
         h1, h2, h3, .brand {
-            font-family: 'Lora', serif;
+            font-family: Georgia, "Times New Roman", serif;
             font-weight: 600;
         }
 
@@ -50,7 +47,6 @@
             padding: 0 20px;
         }
 
-        /* Navigatie */
         header {
             background-color: var(--bg-white);
             border-bottom: 1px solid var(--border-light);
@@ -69,7 +65,7 @@
         }
 
         .brand {
-            font-size: 1.35rem;
+            font-size: 1.3rem;
             color: var(--text-dark);
             text-decoration: none;
         }
@@ -85,7 +81,6 @@
             color: var(--text-muted);
             font-size: 0.95rem;
             font-weight: 500;
-            transition: color 0.2s;
         }
 
         .nav-links a:hover {
@@ -101,7 +96,6 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 0.95rem;
-            transition: background-color 0.2s, transform 0.1s;
         }
 
         .btn:hover {
@@ -109,13 +103,12 @@
         }
 
         .btn-small {
-            padding: 9px 18px;
+            padding: 9px 16px;
             font-size: 0.9rem;
         }
 
-        /* Hero */
         .hero {
-            padding: 72px 20px 60px;
+            padding: 68px 20px 56px;
             text-align: center;
             background: linear-gradient(180deg, var(--bg-white) 0%, var(--bg-cream) 100%);
         }
@@ -132,27 +125,26 @@
         }
 
         .hero h1 {
-            font-size: 2.5rem;
-            line-height: 1.2;
+            font-size: 2.4rem;
+            line-height: 1.25;
             max-width: 700px;
             margin: 0 auto 18px;
             color: var(--text-dark);
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.08rem;
             color: var(--text-muted);
             max-width: 620px;
             margin: 0 auto 30px;
         }
 
-        /* Feestdagen Banner */
         .holiday-banner {
             background-color: var(--holiday-bg);
             border: 1px solid var(--holiday-border);
             border-radius: 12px;
             padding: 22px 26px;
-            margin: 10px auto 50px;
+            margin: 10px auto 40px;
             display: flex;
             align-items: flex-start;
             gap: 16px;
@@ -174,18 +166,17 @@
             color: #5C4B24;
         }
 
-        /* Secties algemeen */
         section {
-            padding: 56px 0;
+            padding: 52px 0;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 36px;
         }
 
         .section-header h2 {
-            font-size: 2rem;
+            font-size: 1.95rem;
             margin-bottom: 10px;
         }
 
@@ -195,12 +186,10 @@
             margin: 0 auto;
         }
 
-        /* Over ons & Troeven */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
-            margin-top: 32px;
         }
 
         .feature-card {
@@ -221,7 +210,6 @@
             color: var(--text-muted);
         }
 
-        /* Diensten & Prijzen */
         .services-section {
             background-color: var(--bg-white);
             border-top: 1px solid var(--border-light);
@@ -243,6 +231,7 @@
             align-items: center;
             padding: 16px 0;
             border-bottom: 1px solid var(--border-light);
+            gap: 12px;
         }
 
         .price-row:last-child {
@@ -272,7 +261,6 @@
             white-space: nowrap;
         }
 
-        /* Openingsuren & Contact */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -309,6 +297,13 @@
             border-bottom: none;
         }
 
+        .note-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 14px;
+        }
+
         .contact-item {
             margin-bottom: 16px;
             font-size: 0.98rem;
@@ -318,6 +313,12 @@
             display: block;
             color: var(--text-dark);
             margin-bottom: 2px;
+        }
+
+        .contact-item a {
+            color: var(--primary-dark);
+            font-weight: 600;
+            text-decoration: none;
         }
 
         .amenities {
@@ -336,21 +337,20 @@
             font-weight: 500;
         }
 
-        .map-frame {
-            margin-top: 24px;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid var(--border-light);
-            height: 220px;
+        .map-box {
+            margin-top: 22px;
+            background-color: var(--bg-accent-soft);
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
         }
 
-        .map-frame iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
+        .map-box a {
+            color: var(--primary-dark);
+            font-weight: 600;
+            text-decoration: none;
         }
 
-        /* Demo-balk onderaan */
         .demo-notice {
             background-color: var(--primary-dark);
             color: #FFFFFF;
@@ -359,7 +359,6 @@
             font-size: 0.88rem;
         }
 
-        /* Footer */
         footer {
             background-color: var(--bg-white);
             border-top: 1px solid var(--border-light);
@@ -374,7 +373,7 @@
                 display: none;
             }
             .hero h1 {
-                font-size: 1.95rem;
+                font-size: 1.9rem;
             }
             .holiday-banner {
                 flex-direction: column;
@@ -385,3 +384,9 @@
 </head>
 <body>
 
+    <header>
+        <div class="nav-wrapper">
+            <a href="#" class="brand">Haarmode Linda Smout</a>
+            <ul class="nav-links">
+                <li><a href="#over-ons">Over ons</a></li>
+                <li><a href="#diensten">Diensten</a></li>
